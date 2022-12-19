@@ -47,6 +47,11 @@ echo "8月3日に放送された「中居正広の金曜日のスマイルたち
 dicdir = /usr/lib/x86_64-linux-gnu/mecab/dic/mecab-ipadic-neologd
 ```
 
+# 5. NEologdの不具合修正
+
+NEologdの不具合修正を独自に行っている人がいます．
+[自然言語処理] NEologdを自前で改造して使っている話 https://zenn.dev/en3_hcl/articles/8110a904e30229
+
 # 参考
 ubuntu 18.04 に mecab をインストール - Qiita https://qiita.com/ekzemplaro/items/c98c7f6698f130b55d53
 mecab-ipadic-NEologdインストール[Ubuntu 16.04 LTS] - Qiita https://qiita.com/spiderx_jp/items/7f8cbfd762c9abab660b
