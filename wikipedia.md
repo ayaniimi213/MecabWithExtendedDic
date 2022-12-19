@@ -75,3 +75,9 @@ Androidが今回指定した辞書から持ってきていることが確認で�
 ``` /etc/mecabrc
 userdic = /usr/local/lib/mecab/dic/mecab-wikipedia-dic.dic
 ```
+
+# 参考
+mecabにwikipediaのタイトルリストを追加する | ミラボ http://log.miraoto.com/2012/11/703/
+mecabにはてなキーワードのタイトルリストを追加する | ミラボ http://log.miraoto.com/2012/11/705/
+miraoto/php.mod-mecab-dic: Frequent using module to make mecab dictionary. https://github.com/miraoto/php.mod-mecab-dic
+fukushimuのメモ帳 [mecab] mecab辞書にwikipediaのタイトルリストを追加 [wikipedia][はてなキーワード] http://fukushimu.blog.shinobi.jp/mecab/-mecab-%20mecab%E8%BE%9E%E6%9B%B8%E3%81%ABwikipedia%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%83%AA%E3%82%B9%E3%83%88%E3%82%92%E8%BF%BD%E5%8A%A0%20-wikipedia--%E3%81%AF%E3%81%A6%E3%81%AA%E3%82%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%89-
