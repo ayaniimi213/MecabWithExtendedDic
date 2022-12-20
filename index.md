@@ -12,11 +12,11 @@ MeCabに辞書を追加する
 # 辞書追加の方法
 
 - [辞書作成環境](https://github.com/ayaniimi213/MecabWithExtendedDic/blob/main/environment.md)
- - このドキュメントでは，AWS EC2上のubuntu 22.04 LTSにて行いました。
- - 他の環境でも実行可能ですが，環境に合わせて，適宜読みかえてください。
+  - このドキュメントでは，AWS EC2上のubuntu 22.04 LTSにて行いました。
+  - 他の環境でも実行可能ですが，環境に合わせて，適宜読みかえてください。
 
 - [mecab-ipadic-NEologdをインストールする手順](https://github.com/ayaniimi213/MecabWithExtendedDic/blob/main/neologd.md)
- - システム辞書として、mecab-ipadic-NEologdに切り替えて使うための手順です。
+  - システム辞書として、mecab-ipadic-NEologdに切り替えて使うための手順です。
 
 - [wikipediaのタイトルリストを追加する手順](https://github.com/ayaniimi213/MecabWithExtendedDic/blob/main/wikipedia.md)
   - ユーザ辞書として、wikipediaのタイトルリストから作成した辞書を使うための手順です。
