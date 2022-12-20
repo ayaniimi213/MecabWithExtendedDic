@@ -59,3 +59,4 @@ NEologdの不具合修正を独自に行っている人がいます。
 - ubuntu 18.04 に mecab をインストール - Qiita https://qiita.com/ekzemplaro/items/c98c7f6698f130b55d53
 - mecab-ipadic-NEologdインストール[Ubuntu 16.04 LTS] - Qiita https://qiita.com/spiderx_jp/items/7f8cbfd762c9abab660b
 - mecab-ipadic-neologd https://github.com/neologd/mecab-ipadic-neologd/
+- 自然言語処理 NEologdを自前で改造して使っている話 https://zenn.dev/en3_hcl/articles/8110a904e30229
