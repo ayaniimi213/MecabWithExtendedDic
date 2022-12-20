@@ -20,14 +20,16 @@ sudo apt install mecab-ipadic-utf8
 ```bash
 git clone https://github.com/miraoto/php.mod-mecab-dic.git
 cd php.mod-mecab-dic
-
-mkdir mod-mecab-dic/tmp
-cd mod-mecab-dic/tmp
-wget https://dumps.wikimedia.org/jawiki/latest/jawiki-latest-all-titles-in-ns0.gz
 ```
 
-wikipediaのタイトルリストの公開URLと，mecab-dict-indexコマンドの場所を修正
+作業ディレクトリの作成
 ```bash
+mkdir mod-mecab-dic/tmp
+```
+
+wikipediaのタイトルリストの公開URLと，mecab-dict-indexコマンドの場所，ipadic辞書の場所を修正
+```bash
+cd mod-mecab-dic
 cp models/wikipedia.php models/wikipedia.php.orig
 vi models/wikipedia.php
 diff models/wikipedia.php.orig models/wikipedia.php
@@ -44,12 +46,12 @@ diff libs/dictionary.php.orig libs/dictionary.php
 <         $command .= '/usr/local/lib/mecab/dic/ipadic/ -u ';
 ---
 >         $command  = '/usr/lib/mecab/mecab-dict-index -d ';
->         $command .= '/var/lib/mecab/dic/ipadic/ -u ';
+>         $command .= '/usr/share/mecab/dic/ipadic/ -u ';
 ```
 
 ```bash
-php ./mod-mecab-dic/bootstrap.php wikipedia
-cd mod-mecab-dic/tmp
+php .bootstrap.php wikipedia
+cd tmp
 mv mecab-dic.dic mecab-wikipedia-dic.dic
 sudo mkdir /usr/local/lib/mecab
 sudo mkdir /usr/local/lib/mecab/dic
