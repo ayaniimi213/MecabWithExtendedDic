@@ -4,11 +4,13 @@ mecab-ipadic-NEologd は、多数のWeb上の言語資源から得た新語を�
 
 # 0. 必要なパッケージのインストール
 
+mecab-ipadic-NEologdに必要なパッケージのインストール
 ```bash
 sudo apt install git make curl xz-utils file
 ```
 
 # 1. mecab
+まだインストールしていなければ
 ```bash
 sudo apt install mecab
 sudo apt install libmecab-dev
@@ -23,8 +25,8 @@ cd mecab-ipadic-neologd
 sudo bin/install-mecab-ipadic-neologd -n -a
 ```
 
-install-mecab-ipadic-neologdのオプションは公式ページ(https://github.com/neologd/mecab-ipadic-neologd/blob/master/README.ja.md)を参考に．
-上記の例は，なにも考えずに全部入りmecab-ipadic-NEologdをインストールする場合.
+install-mecab-ipadic-neologdのオプションは[公式ページ](https://github.com/neologd/mecab-ipadic-neologd/blob/master/README.ja.md)を参考に。
+上記の例は，なにも考えずに全部入りmecab-ipadic-NEologdをインストールする場合。
 
 # 3. テスト
 
@@ -38,7 +40,7 @@ mecab-ipadic-NEologdの場合
 echo "8月3日に放送された「中居正広の金曜日のスマイルたちへ」(TBS系)で、1日たった5分でぽっこりおなかを解消するというダイエット方法を紹介。キンタロー。のダイエットにも密着。" | mecab -d /usr/lib/x86_64-linux-gnu/mecab/dic/mecab-ipadic-neologd
 ```
 
-効果については，公式ページ(https://github.com/neologd/mecab-ipadic-neologd/blob/master/README.ja.md)を参考に．
+効果については，[公式ページ](https://github.com/neologd/mecab-ipadic-neologd/blob/master/README.ja.md)を参考に。
 
 # 4. 普段使う辞書の設定
 普段使うなら，毎回-dを設定しなくてもよいように，/etc/mecabrc を編集する
@@ -49,10 +51,11 @@ dicdir = /usr/lib/x86_64-linux-gnu/mecab/dic/mecab-ipadic-neologd
 
 # 5. NEologdの不具合修正
 
-NEologdの不具合修正を独自に行っている人がいます．
-[自然言語処理] NEologdを自前で改造して使っている話 https://zenn.dev/en3_hcl/articles/8110a904e30229
+NEologdの不具合修正を独自に行っている人がいます。
+以下のページを参考に，必要なら対応するとよいです。
+- 自然言語処理 NEologdを自前で改造して使っている話 https://zenn.dev/en3_hcl/articles/8110a904e30229
 
 # 参考
-ubuntu 18.04 に mecab をインストール - Qiita https://qiita.com/ekzemplaro/items/c98c7f6698f130b55d53
-mecab-ipadic-NEologdインストール[Ubuntu 16.04 LTS] - Qiita https://qiita.com/spiderx_jp/items/7f8cbfd762c9abab660b
-mecab-ipadic-neologd/README.ja.md at master · neologd/mecab-ipadic-neologd https://github.com/neologd/mecab-ipadic-neologd/blob/master/README.ja.md
+- ubuntu 18.04 に mecab をインストール - Qiita https://qiita.com/ekzemplaro/items/c98c7f6698f130b55d53
+- mecab-ipadic-NEologdインストール[Ubuntu 16.04 LTS] - Qiita https://qiita.com/spiderx_jp/items/7f8cbfd762c9abab660b
+- mecab-ipadic-neologd https://github.com/neologd/mecab-ipadic-neologd/

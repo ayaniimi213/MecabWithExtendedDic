@@ -1,16 +1,17 @@
-辞書作成環境を構築．
-以下は，AWS EC2上に環境を構築する例です．
+辞書作成環境を構築
+
+以下は，AWS EC2上にubuntu環境を構築する例です。
 
 # 0. instance立ち上げ
 
 EC2上にinstanceを立ち上げる。
 とりあえず、お試しでt2.microでも良いかも。
 
-AWS t2.large
-OS: ubuntu
-ストレージ: 8GB
+- AWS t2.large
+- OS: ubuntu 22.04 LTS
+- ストレージ: 8GB
 
-t2.microでもよいですが，mecab-ipadic-NEologdを利用する場合，メモリ不足になる可能性があります．
+t2.microでもよいですが，mecab-ipadic-NEologdを利用する場合，メモリ不足になる可能性があります。
 
 
 # 1. パッケージ更新
@@ -28,7 +29,7 @@ sudo do-release-upgrade
 
 # 2. swap設定
 
-EC2instanceがt2.microのときなど、メモリが少ない環境の場合，swap領域を設定する
+EC2 instanceがt2.microのときなど、メモリが少ない環境の場合，swap領域を設定する。
 
 ```bash
 $ sudo dd if=/dev/zero of=/swap.img bs=1M count=2048
